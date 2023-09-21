@@ -34,14 +34,7 @@
 .restropress .rpress-section .rp-col-lg-8 {
     width: 100% !important;
 }
-/* Custom CSS for horizontal food item display */
-/* .rpress_fooditems_list {
-    display: flex;
-    flex-wrap: nowrap;   */
-/* Add horizontal scrollbar if necessary */ 
-     /* overflow-x: auto;   */
-    
-  /* } */
+
 
 .rpress_fooditems_list .rpress_fooditem {
     flex: 0 0 auto; /* Prevent food items from stretching */

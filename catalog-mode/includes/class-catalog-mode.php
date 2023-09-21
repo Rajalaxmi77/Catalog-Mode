@@ -153,29 +153,6 @@ class Catalog_Mode {
 	private function define_admin_hooks() {
 
 		$plugin_admin = new Catalog_Mode_Admin( $this->get_plugin_name(), $this->get_version() );
-		
-			//$catalog_mode_enabled = rpress_get_option('catalog_mode_enable');
-			//print_r($catalog_mode_enabled);
-			
-			// if( $catalog_mode_enabled == 1 ){
-				
-				//add_filter( 'rpress_show_added_to_cart_messages', array( $this, 'remove_cart' ) );
-				// $this->loader->add_action( 'rpress_after_fooditem_content', 'rpress_show_added_to_cart_messages' ) ;
-				// $this->loader->add_filter('rpress_empty_cart_message','remove_empty_cart_message');
-				// $this->loader->add_filter('rpress_add_to_cart_text','remove_add_to_cart_button');
-				// $this->loader->add_filter('rpress_cart_title','remove_rpress_cart_title');
-				// $this->loader->add_filter('rpress_fooditem_content','remove_fooditem_content', 10, 3);
-				// $this->loader->add_filter('rp_confirm_order_text', 'remove_rp_confirm_order_text');
-				// $this->loader->add_filter('rpress_fooditem_price','remove_fooditem_price', 10, 2);
-				// $this->loader->add_filter('rpress_show_checkout_button','custom_remove_cart_and_checkout_button');
-				//Add the custom action hook handler
-				// $this->loader->add_action('init','custom_remove_category_list');
-
-				// $this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
-				// $this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-				// $this->loader->add_filter( 'rpress_settings_sections_general',$plugin_admin, 'add_catalog_mode_setting_section'  );
-				// $this->loader->add_filter( 'rpress_settings_general',$plugin_admin, 'catalog_mode_settings_fields' , 10, 1 );
-			// }
 
 	}
 

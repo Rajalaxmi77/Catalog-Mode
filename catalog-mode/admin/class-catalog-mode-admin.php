@@ -57,26 +57,15 @@ class Catalog_Mode_Admin {
 
 	}
 	public function init_cb() {
-		
-		
-		// if ($catalog_mode_enabled) {
 			
-			
-			//add_filter( 'rpress_show_added_to_cart_messages', array( $this, 'remove_cart' ) );
 			add_action( 'rpress_after_fooditem_content', array( $this, 'rpress_show_added_to_cart_messages' ) );
 			add_filter('rpress_empty_cart_message',array($this, 'remove_empty_cart_message'));
 			add_filter('rpress_add_to_cart_text',array($this, 'remove_add_to_cart_button'));//remove Add button
 			add_filter('rpress_cart_title',array($this, 'remove_rpress_cart_title'));//Remove Your Order
-			 add_action('init',array($this, 'custom_remove_category_list'));
-			 add_action('wp_ajax_check_catalog_mode_status', array( $this, 'check_catalog_mode_status'));
-			 add_action('wp_ajax_nopriv_check_catalog_mode_status', array( $this, 'check_catalog_mode_status'));
+			add_action('init',array($this, 'custom_remove_category_list'));
+			add_action('wp_ajax_check_catalog_mode_status', array( $this, 'check_catalog_mode_status'));
+			add_action('wp_ajax_nopriv_check_catalog_mode_status', array( $this, 'check_catalog_mode_status'));
 		
-
-
-		// }
-
-		// 	$this->remove_cart();
-		// }
 	}
 	
 
@@ -155,12 +144,7 @@ class Catalog_Mode_Admin {
 			'type'  => 'checkbox',
 		);
 		
-        // $general_settings['catalog_mode_settings']['disable_category_menu'] = array(
-        //     'id' => 'disable_category_menu ',
-        //     'name'    => __(' Remove Categories ', 'rpress-catalog'),
-        //     'desc' => __('Remove categories of product', 'rpress-catalog'),
-        //     'type' => 'checkbox',
-        // );
+        
 		$general_settings['catalog_mode_settings']['option_view_food_items'] = array(
 			'id'            => 'option_view_food_items',
 			'type'          => 'radio',
@@ -177,9 +161,6 @@ class Catalog_Mode_Admin {
 		}
 
 		
-
-	// $catalog_mode_enabled = rpress_get_option('catalog_mode_enable');
-	// print_r($catalog_mode_enabled);
 
 	// Function to enable catalog mode
 	public function enable_catalog_mode() {
