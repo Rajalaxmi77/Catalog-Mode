@@ -1,0 +1,38 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ body.catalog-mode-enabled.rpress-section .rpress-sidebar-cart-wrap {  /* remove the cart wrap */
+    box-shadow: none !important; 
+}
+
+body.catalog-mode-enabled.rpress.item-order {
+    border-bottom: none !important; /* remove the horizontal line under your order*/
+    padding: 0 !important;
+}
+
+.rpress_fooditems_list .rp-col-lg-6 .rp-col-md-12 .rp-col-sm-12 .rp-col-xs-12{
+    width: 100px !important; /* Use !important to override existing styles */
+}
+.rpress_fooditems_list .rpress_fooditem {
+    width: 100%;
+    margin-right: 0;
+}
+.rpress_fooditems_list  {
+    margin: 0;
+}
+
+.rpress-price-holder.rpress-grid-view-holder{
+    display: none;
+}
+body.catalog-mode-enabled .rpress_fooditem_buy_button,
+body.catalog-mode-enabled .rpress-sidebar-cart-wrap,
+body.catalog-mode-enabled .rpress-category-lists ,
+body.catalog-mode-enabled .rpress_purchase_submit_wrapper,
+body.catalog-mode-enabled .rp-col-lg-6,
+body.catalog-mode-enabled .rp-col-lg-8{
+    display: none;
+}
+body:not(.price-enabled) .price {
+    display: none;
+}
